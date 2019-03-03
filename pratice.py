@@ -1,0 +1,10 @@
+from selenium import webdriver
+driver=webdriver.Chrome()
+driver.get("https://www.linkedin.com/")
+driver.maximize_window()
+driver.implicitly_wait(30)
+driver.find_element_by_id("reg-firstname").send_keys("vijay")
+driver.find_element_by_id("reg-lastname").send_keys("sharma")
+driver.find_element_by_id("reg-email").send_keys("7727066691")
+driver.find_element_by_id("reg-password").send_keys("qwerty123456@")
+driver.find_element_by_id("registration-submit").click()
