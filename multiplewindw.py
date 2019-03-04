@@ -8,6 +8,7 @@ driver.implicitly_wait(30)
 win_id=driver.current_window_handle
 print(win_id)
 time.sleep(6)
+#test
 
 driver.find_element_by_xpath("//span[text()='Login'] ").click()
 mul_win_id=driver.window_handles
